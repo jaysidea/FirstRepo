@@ -10,5 +10,13 @@ pipeline {
                 '''
             }
         }
+        stage('Run') {
+            steps {
+                sh 'echo "Running Multiiping file"'
+                sh '''
+                    python multiiping.py
+                '''
+            }
+}
     }
 }
