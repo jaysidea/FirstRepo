@@ -23,7 +23,7 @@ def ping(host,n):
         print('Average Return value for {} ping is {}'.format(n,avg))
         
 def sub(host):
-    
+        RTT = ''
         mp = MultiPing([host])
         mp.send()
 
