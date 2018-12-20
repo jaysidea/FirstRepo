@@ -8,7 +8,9 @@ pipeline {
   }
   stages {
     stage('1st Stage'){
-     echo 'Docker/container is ready' 
+      steps{
+     echo 'Docker/container is ready'
+      }
     }
     stage('Get Dependencies') {
       steps {
