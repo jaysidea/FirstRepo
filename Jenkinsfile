@@ -14,14 +14,15 @@ pipeline {
     }
     stage('Get Dependencies') {
       steps {
-        echo 'multiping installation completed'
+        sh 'pip install multiping'
+        
       }
     }
     
     stage('Run') {
       steps {
         echo 'Yeah done!!'
-        sh 'python multiing.py'
+        
       }
     }
   }
