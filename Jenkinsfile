@@ -7,6 +7,9 @@ pipeline {
 
   }
   stages {
+    stage('1st Stage'){
+     echo 'Docker/container is ready' 
+    }
     stage('Get Dependencies') {
       steps {
         sh 'sudo pip install multiping'
