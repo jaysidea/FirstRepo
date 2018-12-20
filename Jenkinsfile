@@ -14,7 +14,7 @@ pipeline {
     }
     stage('Get Dependencies') {
       steps {
-        sh 'sudo pip install multiping'
+        sh 'python hello.py'
       }
     }
     
