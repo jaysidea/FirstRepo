@@ -2,7 +2,7 @@ pipeline {
   agent {
     docker {
       image 'python'
-      
+      args '-u root:root'
     }
 
   }
