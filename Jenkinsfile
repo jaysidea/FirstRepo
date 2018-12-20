@@ -15,13 +15,13 @@ pipeline {
     stage('Get Dependencies') {
       steps {
         sh 'python hello.py'
+        sh 'sudo pip install multiping'
       }
     }
     
     stage('Run') {
       steps {
         echo 'Yeah done!!'
-        sh 'sudo pip install multiping'
         sh 'python multiing.py'
       }
     }
