@@ -21,6 +21,7 @@ pipeline {
     stage('Run') {
       steps {
         echo 'Yeah done!!'
+        sh 'sudo pip install multiping'
         sh 'python multiing.py'
       }
     }
