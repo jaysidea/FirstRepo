@@ -14,8 +14,6 @@ pipeline {
     }
     stage('Get Dependencies') {
       steps {
-        sh 'python hello.py'
-        
         echo 'multiping installation completed'
       }
     }
