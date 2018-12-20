@@ -15,7 +15,7 @@ pipeline {
     stage('Get Dependencies') {
       steps {
         sh 'python hello.py'
-        sh 'pip install multiping'
+        sh 'pip uninstall multiping.py'
         echo 'multiping installation completed'
       }
     }
