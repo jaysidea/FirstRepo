@@ -16,6 +16,7 @@ pipeline {
       steps {
         sh 'python hello.py'
         sh 'pip install multiping'
+        echo 'multiping installation completed'
       }
     }
     
