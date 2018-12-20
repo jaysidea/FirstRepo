@@ -14,7 +14,7 @@ pipeline {
     }
     stage('Get Dependencies') {
       steps {
-        sh 'sudo python3 -m pip install multiping'
+        sh 'python3 -m pip install multiping'
         
       }
     }
