@@ -5,6 +5,10 @@ pipeline {
       steps {
         sh 'docker build -t eero .'
       }
+      stage('Push') {
+      steps {
+        echo 'Pushing Image'
+      }
     }
   }
 }
