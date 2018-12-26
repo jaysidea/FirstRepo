@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'docker build -t eero .'
+        sh 'docker build -t spanidea123/eero:PingFile .'
       }}
       stage('Push') {
       steps {
