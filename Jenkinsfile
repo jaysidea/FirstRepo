@@ -8,7 +8,7 @@ pipeline {
       stage('Push') {
       steps {
         sh 'docker images'
-        sh 'docker login -u spanidea123/eero -p Jayram@1990'
+        sh 'docker login -u spanidea123/eero -p spanidea'
         sh 'docker push spanidea123/eero:PingFile'
       }
     }
