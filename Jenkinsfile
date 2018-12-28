@@ -8,7 +8,8 @@ pipeline {
       stage('Push') {
       steps {
         sh 'docker images'
-        sh 'docker push localhost:5000/eero'
+        sh 'docker run -d -p 5000:5000 --restart=always --name registry registry:2'
+        sh 'docker tag eero localhost:5000/local-eero'
         
       }
     }
