@@ -8,7 +8,7 @@ pipeline {
       stage('Push') {
       steps {
         sh 'docker images'
-        sh 'docker push localhost:5000/eeroimages'
+        sh 'docker push localhost:5000/PingFile'
         
       }
     }
