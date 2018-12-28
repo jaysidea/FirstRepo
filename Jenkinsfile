@@ -11,5 +11,11 @@ pipeline {
         sh 'docker pull localhost:5000/local-eero'
       }
     }
+    stage('Pull') {
+      steps {
+        echo "Login"
+        
+      }
+    }
   }
 }
