@@ -8,8 +8,8 @@ pipeline {
       stage('Push') {
       steps {
         sh 'docker images'
-        sh 'docker login -u spanidea123 -p Spanidea'
-        sh 'docker push spanidea123/eero:PingFile'
+        sh 'docker image tag pingFile localhost:5000/eeroImages'
+        sh 'docker push localhost:5000/eeroImages'
       }
     }
   }
