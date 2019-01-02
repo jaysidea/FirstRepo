@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'docker build -t localhost:5000/local-eero:pingfile .'
+        sh 'docker build -t localhost:5000/local-eero:newpingfile .'
       }}
       stage('Push') {
       steps {
